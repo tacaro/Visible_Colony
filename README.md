@@ -32,4 +32,4 @@ The tool then sequentially computes:
 
 We can then plot this result using `ggplot2`.
 
-[!Image](inc_time.png)
+![Incubation Time Plot](/inc_time.png)
