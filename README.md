@@ -31,3 +31,5 @@ The tool then sequentially computes:
 - the amount of time (T) that this number (X) of divisions would take
 
 We can then plot this result using `ggplot2`.
+
+[!Image](inc_time.png)
