@@ -16,20 +16,20 @@ Currently, only an R-based version exists. It requires tidyverse.
 `library(tidyverse)`.
 
 Within `counter.R`:
-Define the attributes of a generic colony with the following attributes: xax, yax, zax; the x width, y width, and z width of the colony. For this example, I used:
+Define the physical dimensions of a generic colony: xax, yax, zax; the x width, y width, and z width of the colony. For this example, I used:
 ```
 xax <-  1000
 yax <-  1000
 zax <-  (1/6)*1000
 ```
-where each is length in µm. We can then compute the volume of the colony with `col_volumer()`.
+where each axis length is in µm. We can then compute the volume of the colony with the function `col_volumer()`. The assumption I'm making here is that a colony is visible to a human when it reaches a diameter of 1000µm or 1mm.
 
 The tool then sequentially computes:
-- the volume of an individual cell (vi)
-- the number of cells (N) required to produce a colony whose size was determined with `col_volumer()` (V)
-- the number of divisions (X) required to reach this population (N) density
-- the amount of time (T) that this number (X) of divisions would take
+- the volume of an individual cell (vi).
+- the number of cells (N) whose aggregate volumes (vi) produce a colony whose size was determined with `col_volumer()` (V).
+- the number of divisions (X) required to reach this population (N) density.
+- the amount of time (T) that this number (X) of divisions would take.
 
-We can then plot this result using `ggplot2`.
+We can then plot this result, incubation time versus generation time, using `ggplot2`.
 
 ![Incubation Time Plot](/inc_time.png)
