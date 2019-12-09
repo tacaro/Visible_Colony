@@ -12,7 +12,7 @@ The model is based on some assumptions:
 
 
 ## Usage
-Currently, on an R-based version exists. It requires tidyverse.
+Currently, only an R-based version exists. It requires tidyverse.
 `library(tidyverse)`.
 
 Within `counter.R`:
