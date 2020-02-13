@@ -1,4 +1,4 @@
-# Visible_Colony
+# Visible Colony
 
 This is a simple tool created for calculating the amount of time it would take a bacteria to become visible on an agar plate given its doubling time and cell morphology. The purpose of this is to demonstrate how estimated doubling time corresponds to the feasibility of growing an isolate in culture.
 
